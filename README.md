@@ -13,16 +13,6 @@ A local-first productivity web app built with React, Vite, Tailwind CSS, Zustand
 - Header save indicator showing restore/save status.
 - Local-only storage: data remains on the user's device.
 
-## Output Photographs
-
-### Desktop View
-
-![Momentum Workspace assignment tracker desktop output](public/screenshots/assignment-desktop.png)
-
-### Mobile View
-
-![Momentum Workspace assignment tracker mobile output](public/screenshots/assignment-mobile.png)
-
 ## Workbook Tabs
 
 ### Assignment Tracker
