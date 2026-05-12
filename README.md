@@ -1,75 +1,34 @@
-# Momentum Workspace
+# Karnex Tracker
 
-A local-first productivity web app built with React, Vite, Tailwind CSS, Zustand, and Recharts. Momentum Workspace presents a spreadsheet-style workbook for tracking assignments, habits, and progress reports with automatic local saving.
+Karnex Tracker is a local-first productivity workbook built with React and Vite. The app, displayed as Momentum Workspace in the interface, helps users manage assignments, track habits, review progress, and generate printable dashboard reports from one spreadsheet-style workspace.
 
-## Features
+## Overview
 
-- Assignment Tracker with editable rows for course, assignment title, dates, status, priority, progress, submission type, and completion date.
-- Compact professional assignment table with status/priority pills and progress bars.
-- Habit Tracker with top daily habits, monthly checkbox tracking, weekly charts, and live completion totals.
-- Dashboard Report with assignment data, habit progress tables, weekly progress rings, monthly trend charts, and printable report export.
-- Real-time analytics that update immediately as assignments or habits are edited.
-- Automatic local autosave with restore on refresh or revisit.
-- Header save indicator showing restore/save status.
-- Local-only storage: data remains on the user's device.
+This project is designed for students and productivity-focused users who want a simple, private, browser-based tracker. Data is stored locally on the user's device with automatic restore on refresh, so the application can be used without a backend server or account system.
 
-## Workbook Tabs
+## Key Features
+
+- Assignment tracker for courses, tasks, assigned dates, due dates, status, priority, progress, submission type, and completion dates.
+- Habit tracker with daily checkbox logging, top habit summaries, weekly charts, and completion totals.
+- Dashboard report with assignment insights, habit progress tables, weekly progress rings, monthly trend charts, and printable export support.
+- Spreadsheet-style layout for fast scanning and editing.
+- Automatic local autosave using browser storage.
+- Responsive interface with workbook tabs for assignment, habit, and report views.
+- Local-only data model that keeps user information on the device.
+
+## Application Sections
 
 ### Assignment Tracker
 
-The main assignment workspace. It includes:
-
-- Overall status chart
-- Assignments by subject chart
-- Priority chart
-- Editable assignment table
-- End-of-page assignment analytics:
-  - Weekly assignment progress rings
-  - Assignment progress table
-  - Assignment trend chart
+The assignment workspace provides an editable table and visual summaries for academic work. It includes overall status, assignments by subject, priority distribution, weekly progress, and trend reporting.
 
 ### Habit Tracker
 
-The habit workspace includes:
-
-- Top 10 daily habits list
-- Daily checkbox grid for a 31-day month
-- Weekly habit charts
-- Live progress calculations based on checked habit days
+The habit workspace supports daily habit tracking across a monthly grid. Users can monitor completed days, compare weekly progress, and review habit consistency over time.
 
 ### Dashboard Report
 
-The reporting view combines assignment and habit insights:
-
-- Editable assignment report table
-- Weekly habit charts
-- Habit grids
-- Daily progress summary
-- Weekly donut progress
-- Monthly trend chart
-- Printable report download
-
-## Autosave And Local Restore
-
-The app uses Zustand persistence with `localStorage`.
-
-Saved data includes:
-
-- Assignments
-- Habits
-- Habit checkbox logs
-- Weekly planner tasks
-- Weekly planner categories
-- Last saved timestamp
-
-Behavior:
-
-- Every user edit updates the local store automatically.
-- Data is restored when the page is refreshed or reopened in the same browser.
-- No manual save button is required.
-- Data is stored locally on the device and is not sent to a server.
-
-Browser note: clearing site data, using private/incognito mode, or changing browsers/devices can remove or hide saved data.
+The dashboard combines assignment and habit data into a printable report view. It includes progress tables, charts, daily summaries, weekly completion metrics, and monthly trends.
 
 ## Tech Stack
 
@@ -84,41 +43,61 @@ Browser note: clearing site data, using private/incognito mode, or changing brow
 
 ## Getting Started
 
-Install dependencies:
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
 
 ```bash
 npm install
 ```
 
-Run the development server:
+### Run Locally
 
 ```bash
 npm run dev
 ```
 
-Open:
+Open the local development URL shown in the terminal. By default, Vite commonly uses:
 
 ```text
 http://127.0.0.1:5173/
 ```
 
-Build for production:
+### Production Build
 
 ```bash
 npm run build
 ```
 
-Preview the production build:
+### Preview Build
 
 ```bash
 npm run preview
 ```
 
-Run lint checks:
+### Lint
 
 ```bash
 npm run lint
 ```
+
+## Data Storage
+
+Karnex Tracker uses Zustand persistence with `localStorage`.
+
+Saved data includes:
+
+- Assignments
+- Habits
+- Habit checkbox logs
+- Weekly planner tasks
+- Weekly planner categories
+- Last saved timestamp
+
+Because the app stores data locally, clearing browser site data, using private browsing, or switching devices can remove or hide saved information.
 
 ## Project Structure
 
@@ -139,8 +118,19 @@ src/
     useAppStore.js
 ```
 
-## Notes
+## Scripts
 
-- The primary app tabs are wired in `App.jsx`: Assignment Tracker, Habit Tracker, and Dashboard Report.
-- Older standalone components remain in `src/components` for reuse or future expansion.
-- The app is designed as a local-first productivity workbook, not a multi-user cloud document.
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the local development server. |
+| `npm run build` | Create a production build. |
+| `npm run preview` | Preview the production build locally. |
+| `npm run lint` | Run ESLint checks. |
+
+## Repository
+
+GitHub: https://github.com/StratagemVX/KarnexTracker
+
+## Rights
+
+All rights reserved. This project is maintained by the repository owner.
