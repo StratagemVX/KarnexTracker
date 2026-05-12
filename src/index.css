@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sheet-bg: #ffffff;
+  --color-sheet-border: #cccccc;
+  --color-sheet-header-bg: #f1f3f4;
+  
+  /* Tracker Colors */
+  --color-tracker-header: #d3e6d8;
+  --color-tracker-text: #1f2937;
+  
+  /* GS Pill Colors */
+  --color-pill-green-bg: #e2f0e6;
+  --color-pill-green-text: #417e5a;
+  --color-pill-yellow-bg: #fdf0d5;
+  --color-pill-yellow-text: #b08130;
+  --color-pill-orange-bg: #fbdfcf;
+  --color-pill-orange-text: #c05c2a;
+  --color-pill-red-bg: #f6d8d8;
+  --color-pill-red-text: #ab3b3a;
+
+  /* Report Pill Colors */
+  --color-report-green-bg: #f0fdf4;
+  --color-report-green-border: #86efac;
+  --color-report-green-text: #166534;
+  --color-report-yellow-bg: #fefce8;
+  --color-report-yellow-border: #fde047;
+  --color-report-yellow-text: #854d0e;
+  --color-report-red-bg: #fef2f2;
+  --color-report-red-border: #fca5a5;
+  --color-report-red-text: #991b1b;
+
+  --font-sans: "Inter", "Arial", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-sheet-bg m-0 p-0 overflow-hidden text-sm font-sans antialiased text-slate-800;
+  }
+  
+  /* Ensure checkboxes show the tick mark properly */
+  input[type="checkbox"] {
+    appearance: auto;
+    accent-color: #417e5a;
+  }
+}
+
+@layer utilities {
+  .sheet-cell {
+    @apply border-r border-b border-sheet-border px-2 py-1 truncate whitespace-nowrap align-middle;
+  }
+  
+  .sheet-header {
+    @apply bg-sheet-header-bg border-r border-b border-sheet-border text-center font-bold text-slate-500 select-none;
+  }
+
+  .sheet-col-header {
+    @apply bg-sheet-header-bg border-r border-b border-sheet-border text-center font-bold text-slate-500 select-none py-1;
+  }
+
+  .sheet-row-header {
+    @apply bg-sheet-header-bg border-r border-b border-sheet-border text-center font-bold text-slate-500 select-none w-10 sticky left-0 z-10;
+  }
+
+  .tracker-header {
+    @apply bg-tracker-header text-center font-bold text-xs text-tracker-text select-none py-2 tracking-wide uppercase;
+  }
+
+  .tracker-sub-header {
+    @apply border-r border-b border-sheet-border text-center font-bold text-[10px] text-slate-500 bg-slate-100 py-1;
+  }
+
+  .gs-dropdown {
+    @apply appearance-none rounded-full px-3 py-1 text-xs font-bold outline-none cursor-pointer text-center w-full max-w-[120px] mx-auto block;
+  }
+
+  .pill-green { @apply bg-pill-green-bg text-pill-green-text; }
+  .pill-yellow { @apply bg-pill-yellow-bg text-pill-yellow-text; }
+  .pill-orange { @apply bg-pill-orange-bg text-pill-orange-text; }
+  .pill-red { @apply bg-pill-red-bg text-pill-red-text; }
+
+  /* Report Specific */
+  .report-cell {
+    @apply border-r border-b border-sheet-border px-2 py-1 truncate whitespace-nowrap align-middle;
+  }
+  
+  .report-header {
+    @apply bg-tracker-header border-r border-b border-sheet-border text-center font-bold text-xs text-tracker-text select-none py-2 tracking-wide uppercase;
+  }
+
+  .report-pill-dropdown {
+    @apply appearance-none rounded-full px-3 py-1 text-xs font-bold outline-none cursor-pointer text-center w-full max-w-[120px] mx-auto block border shadow-sm transition-colors;
+  }
+
+  .r-pill-green { @apply bg-report-green-bg border-report-green-border text-report-green-text; }
+  .r-pill-yellow { @apply bg-report-yellow-bg border-report-yellow-border text-report-yellow-text; }
+  .r-pill-red { @apply bg-report-red-bg border-report-red-border text-report-red-text; }
+}
