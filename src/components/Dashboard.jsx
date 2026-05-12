@@ -116,7 +116,7 @@ export default function Dashboard() {
           <thead>
             <tr>
               <th className="sheet-th w-16">S.NO</th>
-              <th className="sheet-th w-48">COURSE NAME</th>
+              <th className="sheet-th w-48">TASKS</th>
               <th className="sheet-th">ASSIGNMENT TITLE</th>
               <th className="sheet-th w-40">ASSIGNED DATE</th>
             </tr>

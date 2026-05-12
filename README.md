@@ -8,7 +8,7 @@ This project is designed for students and productivity-focused users who want a 
 
 ## Key Features
 
-- Assignment tracker for courses, tasks, assigned dates, due dates, status, priority, progress, submission type, and completion dates.
+- Assignment tracker for tasks, assigned dates, due dates, status, priority, progress, submission type, and completion dates.
 - Habit tracker with daily checkbox logging, top habit summaries, weekly charts, and completion totals.
 - Dashboard report with assignment insights, habit progress tables, weekly progress rings, monthly trend charts, and printable export support.
 - Spreadsheet-style layout for fast scanning and editing.

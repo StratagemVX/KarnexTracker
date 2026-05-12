@@ -242,7 +242,7 @@ export default function AssignmentTrackerSheet() {
           <tr>
             <td className="sheet-row-header sticky left-0 z-10">14</td>
             <td className="tracker-sub-header text-center">#</td>
-            <td className="tracker-sub-header text-left">COURSE</td>
+            <td className="tracker-sub-header text-left">TASKS</td>
             <td className="tracker-sub-header text-left">ASSIGNMENT</td>
             <td className="tracker-sub-header text-center">ASSIGNED</td>
             <td className="tracker-sub-header text-center">DUE</td>

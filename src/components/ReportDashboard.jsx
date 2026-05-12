@@ -144,7 +144,7 @@ export default function ReportDashboard() {
           <thead>
             <tr>
               <th className="report-header w-12">S.NO</th>
-              <th className="report-header w-40">COURSE NAME</th>
+              <th className="report-header w-40">TASKS</th>
               <th className="report-header w-64">ASSIGNMENT TITLE</th>
               <th className="report-header w-32">ASSIGNED DATE</th>
               <th className="report-header w-32">DUE DATE</th>
