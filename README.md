@@ -133,4 +133,4 @@ GitHub: https://github.com/StratagemVX/KarnexTracker
 
 ## Rights
 
-All rights reserved. This project is maintained by the repository owner.
+Personal learning project; not affiliated with or endorsed by the original creator.
